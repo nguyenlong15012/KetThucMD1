@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function kiemtra(n, arr){
+        for (let i = 0; i < arr.length; i++) {
+            if (arr.indexOf(n)>=0){
+                return true;
+            }else {
+                return false;
+            }
+        }
+    }
+    let arr = [1,2,3,4,5,6,7,8,9];
+    let n = +prompt('Nhập số để kiểm tra có phần tử trong mảng không?');
+
+    if (kiemtra(n,arr)){
+        document.write('Ví trí của số bạn cần tìm là: '+ arr.indexOf(n));
+    }else {
+        document.write('Không có số bạn cần tìm');
+    }
+</script>
+</body>
+</html>
